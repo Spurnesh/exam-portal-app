@@ -29,13 +29,17 @@ a:active {
     width: 100%;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #fffc;
+    background-color: none;
     border-radius: 20px;
     margin-right: 20px;
 }
 
 .video-grid-header{
-  text-align: center;
+    font-size: 15px;
+    position: absolute;
+    color: #f8f9fadb;
+    margin-top: 75px;
+    font-weight: 500;
 }
 
 video {

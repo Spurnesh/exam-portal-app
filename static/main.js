@@ -22,7 +22,8 @@ window.onload = () => {
             addVideoStreamForStudent(myVideo,myVideoStream,myname) 
         }, 5000);
     }
-    else {
+    else {        
+        document.getElementById("student_exam_section").remove();
         document.getElementById("student-main-window-helptext").remove();
         document.getElementById("video-grids-students").remove();
         $("#getCodeModal").modal("show");      
