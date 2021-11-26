@@ -124,7 +124,7 @@ video {
 .main__chat_window {
     flex-grow: 1;
     overflow-y: auto;
-    background: rgb(6 132 153);
+    background: rgb(206 220 223);
 }
 
 .main_controls_button:hover {
@@ -141,7 +141,7 @@ video {
 }
 
 .message {
-    color: white;
+    color: #343a40;
     list-style-type: none;
     margin: 0px 0px 5px 10px;
 }

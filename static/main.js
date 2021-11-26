@@ -5,13 +5,13 @@ const videoGridsStudents = document.getElementById("video-grids-students");
 const myVideo = document.createElement("video");
 const chat = document.getElementById("chat");
 OtherUsername = "";
-chat.hidden = true;
 myVideo.muted = true;
 
 
 
 window.onload = () => {       
     if(document.location.href.includes('exam_subject_student')){
+        chat.hidden = false;
         document.getElementById("video-grids").remove();
         document.getElementById("video").remove();
         document.getElementById("invite-button").remove();        
@@ -23,6 +23,7 @@ window.onload = () => {
         }, 5000);
     }
     else {        
+        chat.hidden = true;
         document.getElementById("student_exam_section").remove();
         document.getElementById("student-main-window-helptext").remove();
         document.getElementById("video-grids-students").remove();
