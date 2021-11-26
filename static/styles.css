@@ -31,11 +31,10 @@ a:active {
     flex-wrap: wrap;
     background-color: #fffc;
     border-radius: 20px;
-    margin: 20px;
+    margin-right: 20px;
 }
 
 .video-grid-header{
-  width: 100%;
   text-align: center;
 }
 
@@ -43,9 +42,8 @@ video {
     display: block;
     flex: 1;
     object-fit: cover;
-    border: 5px solid #000;
-    max-width: 600px;
-    border-radius: 25px;
+    border: 1px solid #000;
+    max-width: 100px;
 }
 
 .mainclone {
@@ -64,7 +62,7 @@ video {
     display: flex;
     flex: 0.2;
     flex-direction: column;
-    background-color: #242324;
+    background-color: rgb(6, 132, 153);
 }
 
 .main_controls_block {
@@ -77,7 +75,7 @@ video {
     flex-direction: row;
     background-color: #1C1E20;
     color: white;
-    padding: 10px;
+    padding: 20px;
     justify-content: space-between
 }
 
@@ -108,12 +106,13 @@ video {
 .main__message_container {
     padding: 20px 15px;
     display: flex;
+    background: #f8f9faeb;
 }
 
 .main__message_container input {
     flex-grow: 1;
     background-color: transparent;
-    color: white;
+    color: black;
     border: none;
     outline: none
 }
@@ -121,6 +120,7 @@ video {
 .main__chat_window {
     flex-grow: 1;
     overflow-y: auto;
+    background: rgb(6 132 153);
 }
 
 .main_controls_button:hover {
@@ -139,15 +139,7 @@ video {
 .message {
     color: white;
     list-style-type: none;
-    border: 2px solid #3d3d42;
-    margin-bottom: 5px
-}
-
-.main_right_header h6 {
-    background-color: rgb(6 132 153);
-    padding: 10px;
-    border-radius: 20px;
-    font-size: 16px;
+    margin: 0px 0px 5px 10px;
 }
 
 @keyframes animate {
@@ -182,14 +174,13 @@ video {
     padding: 5px;
     border-radius: 7px;
     color: #fff;
-    background: rgb(6, 132, 153);;
+    background: rgb(6, 132, 153);
     border: none;
     font-weight: 600;
 }
 
-.student-main-window-helptext{
-    color: white;
-    background: #a34343;
-    border-radius: 40px;
-    padding: 10px 50px 10px 50px;
+#student-main-window-helptext{
+    color: #ff6e6ed6;
+    font-size: 18px;
 }
+

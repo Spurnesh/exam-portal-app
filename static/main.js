@@ -14,13 +14,16 @@ window.onload = () => {
     if(document.location.href.includes('exam_subject_student')){
         document.getElementById("video-grids").remove();
         document.getElementById("video").remove();
-        document.getElementById("invite-button").remove();
-        document.getElementById("leave-button-teacher").remove();        
+        document.getElementById("invite-button").remove();        
+        document.getElementById("participants-button").remove();        
+        document.getElementById("leave-button-teacher").remove();
+        document.getElementById("student_videos_section").remove();                
         setTimeout(function(){ 
             addVideoStreamForStudent(myVideo,myVideoStream,myname) 
         }, 5000);
     }
     else {
+        document.getElementById("student-main-window-helptext").remove();
         document.getElementById("video-grids-students").remove();
         $("#getCodeModal").modal("show");      
     }
@@ -29,7 +32,7 @@ window.onload = () => {
 var peer = new Peer(undefined, {
     path: "/peerjs",
     host: "/",
-    port: "3030",
+    port: "5000",
 });
 
 let myVideoStream;

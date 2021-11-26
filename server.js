@@ -19,7 +19,7 @@ app.use("/peerjs", peerServer);
 
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "../exam-react-ui/static", "index.html"));
+    res.sendFile(path.join(__dirname, "/static", "index.html"));
 });
 
 
@@ -85,6 +85,13 @@ io.on("connection", (socket) => {
       
     });
 });
+
+app.get('/api/greeting', (req, res) => {
+    const name = req.query.name || 'World';
+    res.setHeader('Content-Type', 'application/json');
+    res.send(JSON.stringify({ greeting: `Hello ${name}!` }));
+});
+
 
 server.listen(process.env.PORT || 5000);
 
