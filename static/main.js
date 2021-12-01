@@ -34,7 +34,7 @@ window.onload = () => {
 var peer = new Peer(undefined, {
     path: "/peerjs",
     host: "/",
-    port: "5000",
+    port: "443",
 });
 
 let myVideoStream;
